@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    float radius,Area,pie=3.14;
+    cout<<"Enter radius:";
+    cin>>radius;
+    
+   Area=pie*radius*radius;
+   
+   cout<<"The area of circle is="<<Area<<" meter square";
+
+  return 0;
+  }
