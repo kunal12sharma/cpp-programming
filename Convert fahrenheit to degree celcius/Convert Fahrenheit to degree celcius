@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+  float Celsius,Fahrenheit;
+    cout<<"Enter Fahrenheit:;
+    cin>>Fahrenheit;
+    
+Celsius= (Fahrenheit-32)*5/9;
+    
+    cout<<"Celsius = "<<Celsius;
+    
+    
+    return 0;
+    
+}
