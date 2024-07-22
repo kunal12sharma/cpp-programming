@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,i;
+    cout<<"Enter number :";
+    cin>>n;
+    
+    i=0;
+    while(i*i<=n)
+    {
+        i=i+1;
+    }
+    i=i-1;
+    cout<<"Square root of "<<n<<" is :"<<i;
+    
+    return 0;
+}
