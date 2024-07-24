@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,i,stars;
+    cout<<"Enter the value of n:";
+    cin>>n;
+    
+    for(i=1;i<=n;i++)
+    {
+        for(stars=1;stars<=i;stars++)
+        {
+            cout<<"*";
+            
+        }
+        cout<<" ";
+        for(stars=1;stars<=n-i+1;stars++)
+        {
+            cout<<"*";
+            
+        }
+        cout<<" ";
+        for(stars=1;stars<=n-i+1;stars++)
+        {
+            cout<<"*";
+            
+        }
+        cout<<" ";
+        for(stars=1;stars<=i;stars++)
+        {
+            cout<<"*";
+            
+        }
+        cout<<" ";
+        cout<<"\n";
+        }
+
+     return 0;
+}
