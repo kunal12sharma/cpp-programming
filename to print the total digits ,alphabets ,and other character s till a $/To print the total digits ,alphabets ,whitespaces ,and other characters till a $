@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int digits=0,whitespace=0,specials=0,characters=0;
+    char ch;
+    
+    ch= cin.get();
+    
+    while(ch!='$')
+    {
+        if(ch>='A' and ch<='z' || ch>='a' and ch<='z')
+        {
+            characters++;;
+        }
+        else if(ch==' ' || ch=='\t' || ch=='\n')
+        {
+            whitespace++;
+        }
+        else if(ch>='0' and ch<='9')
+        {
+            digits++;
+        }
+        else
+        {
+            specials++;
+        }
+        ch=cin.get();
+    
+    }
+    cout<<"Total characters:"<<characters<<endl;
+    cout<<"Total spaces:"<<whitespace<<endl;
+    cout<<"Total numbers:"<<digits<<endl;
+    cout<<"Total specials:"<<specials<<endl;
+    
+    return 0;
+}
