@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    bool ans;
+    int x;
+    cout<<"Enter the value of x:";
+    cin>>x;
+    
+    ans = ((x%2==0)? true : false);
+    if(ans)
+    {
+        cout<<"Even hai\n";
+    }
+    else{
+        cout<<"Odd hai\n";
+    }
+    return 0;
+}
