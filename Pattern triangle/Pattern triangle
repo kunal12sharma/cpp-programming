@@ -1,0 +1,27 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    int n;  // Number of rows
+    cin>>n;
+    for (int i = 1; i <= n; ++i) {
+        // Print leading spaces
+        cout << std::setw(2 * (n - i)) << "";
+
+        // Print increasing numbers
+        for (int j = 0; j < i; ++j) {
+            cout << i + j << " ";
+        }
+
+        // Print decreasing numbers
+        for (int j = i - 1; j > 0; --j) {
+            cout << i + j - 1 << " ";
+        }
+
+        // Move to the next line
+        std::cout << std::endl;
+    }
+
+    return 0;
+}
