@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+//function declartion
+void calc(int a, int b, char op);
+int main()
+{
+    int x,y;
+    char c;
+    cout<<"Enter number,operator,second number:";
+    cin>>x>>c>>y;
+    //function call
+    calc(x,y,c);
+    return 0;
+}
+//function defination
+void calc(int a, int b, char op)
+{
+    switch(op)
+    {
+        case '+':
+        cout<<a<<"+"<<b<<"="<<a+b;
+        break;
+         case '-':
+        cout<<a<<"-"<<b<<"="<<a-b;
+        break;
+         case '*':
+        cout<<a<<"*"<<b<<"="<<a*b;
+        break;
+         case '/':
+        cout<<a<<"/"<<b<<"="<<a/b;
+        break;
+         case '%':
+        cout<<a<<"%"<<b<<"="<<a%b;
+        break;
+    }
+}
