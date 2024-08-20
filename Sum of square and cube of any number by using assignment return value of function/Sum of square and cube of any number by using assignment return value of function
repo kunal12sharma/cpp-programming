@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int sqr(int);
+int cube(int);
+int main()
+{
+    int n,o,c;
+    cout<<"Enter First Integer:";
+    cin>>n;
+    cout<<"Enter second Integer:";
+    cin>>o;
+    c = sqr(n)+cube(o);
+      cout<<"Result="<<c;
+    return 0;
+}
+int sqr(int num)
+{
+    return num*num;
+}
+int cube(int num)
+{
+    return num*num*num;
+}
